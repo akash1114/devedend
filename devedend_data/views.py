@@ -8,13 +8,16 @@ import re
 
 # Create your views here.
 #Home page
+data = {'Nestle': ['Nestle', 'Final', '650.00', '16-02-2021', '-', '29-04-2021', 65.0, 0.40385212799005904], 'Castrol': ['Castrol', 'Final', '60.00', '01-02-2021', '-', '22-04-2021', 3.0, 2.34375], 'ABB India': ['ABB India', 'Final', '250.00', '10-02-2021', '-', '19-04-2021', 5.0, 0.328515111695138], 'Schaeffler Ind': ['Schaeffler Ind', 'Final', '380.00', '16-02-2021', '-', '19-04-2021', 38.0, 0.7331661200077175], 'Sanofi India': ['Sanofi India', 'Special', '2400.00', '24-02-2021', '-', '19-04-2021', 240.0, 2.956757422693113], 'ACC': ['ACC', 'Final', '140.00', '11-02-2021', '31-03-2021', '30-03-2021', 14.0, 0.7662835249042146], 'CRISIL': ['CRISIL', 'Final', '1400.00', '11-02-2021', '-', '30-03-2021', 14.0, 0.7223942208462333], 'Coal India': ['Coal India', 'Interim', '0.00', '23-02-2021', '16-03-2021', '15-03-2021', 0.0, 0.0]}
+
+
 def home(request):
-    if('output' not in request.session.keys()):
-        data = {}
-        data= dividend()
-        request.session['output'] = data
-    else:
-        data = request.session.get('output')
+#     if('output' not in request.session.keys()):
+#         data = {}
+#         data= dividend()
+#         request.session['output'] = data
+#     else:
+#         data = request.session.get('output')
     return render(request,'Home.html',{'Data':data})
 
 
