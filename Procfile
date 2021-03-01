@@ -1,1 +1,1 @@
-web: gunicorn devedend.wsgi --log-file -
+web: gunicorn Stock.wsgi --log-file -
