@@ -8,22 +8,7 @@
 {% bootstrap_javascript jquery='full' %}
 {% bootstrap_messages %}
 
-  <!--  <style>
-table {
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #ddd;
-}
 
-th, td {
-  text-align: left;
-  padding: 10px;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2
-}
-</style>-->
 <style>
     th {
   cursor: pointer;
@@ -34,9 +19,7 @@ tr:nth-child(even) {
 <head>
 <body>
 
-
-
-<table id="myTable" class="table table-striped table-bordered">
+<table id="myTable" class="table table-striped table-bordered" style="margin-left: auto;margin-right: auto">
 <tr>
     <th onclick='sortTable(0)'>Company Name</th>
     <th onclick="sortTable(1)">Type</th>
